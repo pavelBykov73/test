@@ -97,7 +97,10 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 		  HAL_GPIO_WritePin(GPIOD, Led1_Pin, GPIO_PIN_SET);
+		  HAL_GPIO_WritePin(GPIOD, Led2_Pin, GPIO_PIN_SET);
+		
 		  HAL_GPIO_WritePin(GPIOD, Led1_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(GPIOD, Led2_Pin, GPIO_PIN_RESET);
   }
   /* USER CODE END 3 */
 }
