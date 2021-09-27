@@ -63,6 +63,7 @@ static void MX_GPIO_Init(void);
   */
 int main(void)
 {
+	int flag=0;
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -93,6 +94,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+		if(flag)
+			flag=0;
+		else
+			flag=1;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
